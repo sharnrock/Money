@@ -16,6 +16,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <TextBox Text="{Binding MonthlyIncome, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="169,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Monthly Income" HorizontalAlignment="Left" Margin="50,66,0,0" VerticalAlignment="Top"/>
@@ -35,5 +36,6 @@
             <TextBlock Text="Final Amount: " FontWeight="Bold" Margin="0,0,5,0"/>
             <TextBlock Text="{Binding FinalAmount, StringFormat={}{0:C}}"/>
         </StackPanel>
+        <Button Grid.Row="4" Content="Save" Width="120" Height="30" Command="{Binding SaveCommand}" HorizontalAlignment="Left" Margin="10"/>
     </Grid>
 </UserControl>

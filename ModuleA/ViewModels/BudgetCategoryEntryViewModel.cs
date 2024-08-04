@@ -4,6 +4,8 @@ namespace ModuleA.ViewModels
 {
     public class BudgetCategoryEntryViewModel : BindableBase
     {
+        public int Id { get; set; }
+
         private string _categoryName = "Category Name";
         public string CategoryName
         {
